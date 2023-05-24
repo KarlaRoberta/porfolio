@@ -22,59 +22,58 @@ main{
     width: 80%;
     height: 80%;
     position: relative;
-    top: 35%;
+    top: 26%;
     left: 40%;
     transform: translate( -50%, -40%);
     margin: auto;
-
 }
 
 h1{
     position: relative;
-    text-align: center;
-    justify-content: center;
-    top: 5px;
+    top: 20px;
+    left: 100px;
     color:#163c58; 
 }
 
 .pontinhos{
     position: relative;
-    top: -170px;
-    right: 220px;
-    width: 50%;
+    top: -200px;
+    right: 320px;
+    width: 100%;
+    
 }
-.detalhes{
-    position: relative;
-    left: 450px;
-    top: 270px;
-}
+
 .apresentacao{
     position: absolute;
 }
 .apresentacao > .apresentacao-k{
     display: inline-block;
     position: absolute;
-    top: 30%;
-    left: 80%;
+    top: 50%;
+    left: 15%;
     color: white;
-    font-size: 25px; 
+    font-size: 18px; 
     text-indent: 15px;
-    /* line-height: 40px; */
-    width: 50%;
+    line-height: 40px; 
+    width: 100%;
     height: 50%;
     transform: translate( -50%, -50%);
     
 } 
 span#burguer{
     background-color: #163c5870;
-    display: block;
-    text-align: center;
+    position: relative;
+    left: 402px;
+    top: -35px;
     padding: 8px;
+    margin-top: 20px;
     cursor: pointer;
+    border-radius: 5px;
+    
 }
 
 span#burguer:hover{
-    background-color: white;
+    background-color: #163c586f;
     color: #163c58;
 
 }
@@ -83,7 +82,7 @@ span#burguer:hover{
     background-color: #c3d1db;
     position: relative; /*aq era absolut*/
     left: 0;
-    top: 10px;
+    top: -30px;
     width: 100%;
     color: #163c58; 
    
@@ -123,44 +122,36 @@ hr{
 .perfil{
     background-position: left top;
     position: relative;
-    left: 200px;
-    top: 95px; 
-    width: 25vw;
+    left: -40px;
+    top: -35px; 
+    width: 45vw;
     transform: translate( -65%, -50%);
+    background-image: url('imagens/principal.png');
 }
-@media(min-width: 375px) and (max-width: 667px) {
-    .perfil{
-        background-position: left top;
-        position: relative;
-        left: 20px;
-        top: 5px; 
-        width: 45vw;
-        transform: translate( -65%, -50%);
-}
-.sobre-mim{
-    font-size: large;
+.sobre-mim-texto{
+    display: inline-block;
     text-align: center;
-    text-indent: 25px;
-    align-items: center;
-    justify-content: center;
-    background-color: #b1d4e0e9;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    padding: 400px 0px 30px 0px;
-    margin-bottom: 0;
-    display: flex;
-    position: relative;
-    top: 900px;
-    color: white; 
+    position: absolute;
+    top: 885px;
+    right: -140px;
+    text-indent: 15px;
+    line-height: 30px; 
+    width: 80%;
+    height: 50%;
+    transform: translate( -50%, -50%);
+    color: white;
+    font-size: 16px;
+    
 } 
+
 .sobre{
     justify-content: center;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     font-weight: bold;
     position: absolute;
-    top: 40px;
-    left: 650px; 
+    top: 680px;
+    left: 160px; 
     color:#163c58d3 ;
 }
 hr {
@@ -181,20 +172,70 @@ div.projeto{
     height: 300px;
 
 }
+
+.projeto{
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 1320px;
+    left: 180px; 
+    color:#163c58d3 ;
+}
+
 div#p1{
     position: relative;
-    top: 655px;
+    top: 745px;
+    left: -107px;
+    background-image: url('imagens/projeto-pagina-de-cadastro.png');
+    background-size: 300px;
 }
 div#p2{
     position: relative;
-    top: 705px;
+    top: 785px;
+    left: -107px;
+    background-color: rgba(255, 255, 255, 0.545);
+}
+.pagina-de-cadastro{
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    font-size: 18px; 
+    top: 1530px;
+    left: 245px;
+    width: 50%;
+    height: 60%;
+    transform: translate( -50%, -40%);
+    color: #163c58;
+}
+
+.link-projeto1{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+    top: 720px;
+    left: -15px;
+}
+.html{
+    position: relative;
+    top: 820px;
+    
+}
+.css{
+    position: relative;
+    top: 802px;
+    left: 50px;
+
 }
 .linkedin>a{
     font-size: 20px;
     text-align: center;
     position: absolute;
-    top:63%;
-    left: 780px;
+    top: 68%;
+    left: 41%;
     color: rgb(214, 226, 241);
     text-decoration: none; 
 }
@@ -202,8 +243,8 @@ div#p2{
     font-size: 20px;
     text-align: center;
     position: absolute;
-    top:70%;
-    left: 783px;
+    top:75%;
+    left: 43%;
     color:rgb(214, 226, 241);
     text-decoration: none; 
     
@@ -219,189 +260,7 @@ footer{
    text-align: center;
    justify-content: center;
    position: relative;
-   top: 700px;
+   top: 1500px;
    color:white;
    
-}  
-
-/* @media(min-width: 375px) and (max-width: 667px) {
-
-
-    main{
-        background-image: linear-gradient(to right, #6595a4, #163c58);
-        padding: 2rem 7rem;
-        border-radius: 20px;
-        width: 50vw;
-        margin: auto;
-    
-    }
-
-    h1{
-        position: fixed;
-        text-align: center;
-        justify-content: center;
-        left: 185px;
-        top: -40px;
-        margin-block-start: 1.7em;
-        color:#163c58; 
-
-    }
-    
-    .pontinhos{
-        position: relative;
-        top: -72px;
-        right: 200px;
-    }
-    .detalhes{
-        position: relative;
-        left: 10px;
-        top: 90px;
-    }
-    .apresentacao{
-        display: inline-block;
-        position: relative;
-        top: 290px;
-        left: -10px;
-        color: white;
-        font-size: 18px;
-        text-indent: 15px;
-        line-height: 40px;
-        
-    } 
-     
-    .menu{
-        background-color: #c3d1db;
-        position: fixed;
-        left: 0;
-        top: -85px;
-        width: 100%;
-        height: 25%;
-        margin-top: -1.0em;
-        color: #163c58; 
-        max-width: 100%;
-        
-    } 
-    #conteudo{
-        position: fixed;
-        top: 75px;
-        left: 100px;
-        /* width: 100%;
-        height: 90px;  */
-    /* }
-    
-    #conteudo >a{
-        text-decoration: none;
-        color: #dee6ec;
-        margin-right: 20px;
-    
-    }
-    
-    #conteudo > a:hover{
-        padding: 15px;
-        background-color: #163c58d3 ;
-        color: white;   
-        border-radius: 15px;
-    }
-    
-    hr{
-        position: relative;
-        top: 400px;
-    }
-    
-    .perfil{
-        position: absolute;
-        left: 130px;
-        top: 80px; 
-        width: 50vw;
-    }
-    .sobre-mim{
-        font-size: large;
-        text-align: center;
-        text-indent: 25px;
-        align-items: center;
-        justify-content: center;
-        background-color: #b1d4e0e9;
-        font-family: 'Poppins', sans-serif;
-        font-weight: bold;
-        padding: 100px 100px 30px 100px;
-        margin-bottom: 0;
-        display: flex;
-        position: relative;
-        left: -100px;
-        top: 100px;
-        color: white; 
-        width: 100%;
-        
-    } 
-    .sobre{
-        justify-content: center;
-        font-family: 'Roboto', sans-serif;
-        font-size: 30px;
-        font-weight: bold;
-        position: absolute;
-        top: 40px;
-        left: 140px; 
-        color:#163c58d3 ;
-    }
-    hr {
-        position: relative;
-        top: 310px;
-        width: 20%;
-        height: 1px;
-        border: 0px;
-        border-top: 1px solid #b1d4e0e9;
-        background-color: #dddddd;
-      }
-    div.projeto{
-        display: inline-block;
-        border: 2px solid #163c58d3;
-        border-radius: 15px;
-        background-color: #c3d1db;
-        width: 300px;
-        height: 300px;
-    
-    }
-    div#p1{
-        position: relative;
-        top: 655px;
-    }
-    div#p2{
-        position: relative;
-        top: 705px;
-    }
-    .linkedin>a{
-        font-size: 20px;
-        text-align: center;
-        position: absolute;
-        top:73%;
-        left: 195px;
-        color: rgb(214, 226, 241);
-        text-decoration: none; 
-    }
-    .github>a{
-        font-size: 20px;
-        text-align: center;
-        position: absolute;
-        top:81%;
-        left: 203px;
-        color:rgb(214, 226, 241);
-        text-decoration: none; 
-        
-    }
-    .linkedin> a:hover{
-        color:  #163c58d3;   
-    }
-    .github> a:hover{
-        color:  #163c58d3;   
-    }
-    footer{
-       display: flex;
-       text-align: center;
-       justify-content: center;
-       position: relative;
-       top: 700px;
-       color:white;
-       
-    }  
-    
-} */ 
+}
